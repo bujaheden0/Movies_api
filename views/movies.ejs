@@ -1,9 +1,16 @@
 <% include partials/header %>
 <div class="container">
-    <% movies["Search"].forEach(function(movie){ %>
-        <div class="movies"><img src=<%= movie.Poster%> <br>
-            <li> <a href="/movies/<%= movie.imdbID %>"><%= movie.Title %></a></li>
-        </div>
-    <% }) %>
+    <% if(movies.length > 0){ %>
+        <% movies["Search"].forEach(function(movie){ %>
+            <div class="movies"><img src=<%= movie.Poster%> <br>
+                <li> <a href="/movies/<%= movie.imdbID %>"><%= movie.Title %></a></li>
+            </div>
+        <% }) %>
+    <% } else { %>
+        <h1>ไม่พบข้อมูลที่ท่านค้นหา <br> <br> 
+            <a href="/">BACK</a>
+        </h1>
+        
+    <% } %>
 </div>
 <% include partials/footer %>

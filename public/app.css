@@ -85,7 +85,7 @@ img{
     font-weight: bold;
 }
 
-a{
+.movies a{
     text-decoration: none;
     color: white;
 }
@@ -98,4 +98,14 @@ a{
 .movie li{
     list-style: none;
     color: yellow;
+}
+
+h1{
+    color: aliceblue;
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
