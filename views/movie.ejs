@@ -1,0 +1,14 @@
+<% include partials/header %>
+<div class="container">
+        <div class="movie"><img src=<%= movie.Poster%> <br>
+            <div class="description">
+                        <li><strong>Title :</strong> <%= movie.Title %></li>
+                        <li><strong>Year :</strong> <%= movie.Year %></li>
+                        <li><strong>Director :</strong> <%= movie.Director %></li>
+                        <li><strong>Writer :</strong> <%= movie.Writer %></li>
+                        <li><strong>Actors :</strong> <%= movie.Actors %></li>
+                        <li><strong>Plot :</strong> <%= movie.Plot %></li>
+            </div>
+        </div>
+</div>
+<% include partials/footer %>
